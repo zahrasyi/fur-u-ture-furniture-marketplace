@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', 'sans serif';
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf7f6;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+}
+
+html ::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #eae0dc;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #eae0dc;
+
+}
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #b58d7e, #845f51);
+    color: #faf1f6;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.btn:hover {
+    letter-spacing: 2px;
+    background: linear-gradient(135deg, #945f51, #b58d7e);
+
+}
+
+
+/* header section start */
+
+.header {
+    padding: 1.5rem 1rem;
+    position: -webkit-sticky;
+    position: sticky;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    text-align: center;
+    background: #f0e8e4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: #5e473e;
+    font-weight: 500;
+}
+
+.header .logo i{
+    padding-right: .3rem;
+
+}
+
+.header .search-form {
+    height: 5rem;
+    width: 50rem;
+    border-radius: .75rem;
+    background-color: transparent;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #f0e8e4;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 0.1rem solid #caab9f;
+
+}
+
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    padding: 0 1.2rem;
+    font-size: 1.6rem;
+    color: #5e473e;
+    text-transform: none;
+    background: transparent;
+}
+
+.header .search-form input::placeholder {
+    color: #5e473e;
+
+}
+
+.header .search-form label {
+    font-size: 2.2rem;
+    padding-right: 1.7rem;
+    cursor: pointer;
+    color: #5e473e;
+}
+
+.header .search-form label:hover {
+    color: #9e7464;
+}
+
+.header .icon {
+    display: flex;
+    align-items: center;
+
+}
+
+.header .icon div{
+    margin-left: 2rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #5e473e;
+
+}
+
+.header .icon div:hover{
+    color: #9e7464;
+}
+
+#search-btn{
+    display: none;
+}
+
+
+/* header section end */
+
+/* navbr starts */
+.navbar {
+    position: fixed;
+    top: 0rem;
+    left: 50%;
+    padding: 1rem 0;
+    /* bottom: 1.5%; */
+    transform: translateX(-50%);
+    /* right: -101%;
+    z-index: 1000; */
+    width: 100%;
+    max-width: 35rem;
+    /* height 1000vh */
+    /* background: #f0e8e4; */
+    /* display: -webkit-box;
+    display: -ms-flexbox; */
+    transition: top 0.4s ease;
+    display: flex;
+    justify-content: center;
+    /* margin: 2%;
+    border-radius: 3rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column; */
+
+}
+
+#menu-toogle:checked + .menu-icon + .navbar {
+    display: block;
+}
+
+/* .navbar .active {
+    right: 0;
+    -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+    -webkit-transition: .4s linear;
+    transition: .4s linear;
+
+} */
+
+.navbar a{
+    /* display: block; */
+    margin: 0 1.5rem;
+    font-size: 1.5rem;
+    color: #5e473e;
+    text-align: center;
+    transition: color 0.3s linear;
+    text-decoration: none;
+    padding: 1rem 0;
+}
+
+.navbar a:hover {
+    color: #9e7464;
+    transform: scale(1.1);
+}
+
+
+/* navbar ends */
+
+
+/* inspiration starts */
+/* Section Styling */
+.inspiration {
+    text-align: center;
+    width: 100%; /* Memastikan selebar layar */
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 3rem 0; /* Tambahkan padding vertikal */
+    min-height: 100vh; /* Pastikan tinggi mencapai layar penuh */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Jarak antar elemen terjaga */
+    position: relative; /* Posisi default untuk mengikuti scroll */
+}
+
+.inspiration .header {
+    margin-bottom: 0rem; /* Jarak heading lebih besar */
+    position: relative; /* Pastikan tidak sticky atau fixed */
+    z-index: auto; /* Tidak mengganggu elemen lain */
+}
+
+.inspiration .header h2 {
+    font-size: 2rem; /* Ukuran heading lebih besar */
+    font-weight: bold;
+    color: #5e473e;
+    margin-bottom: 0rem;
+}
+
+.inspiration .header p {
+    font-size: 2.5rem; /* Ukuran deskripsi lebih besar */
+    color: #9e7464;
+}
+
+.inspiration .text-description {
+    margin-top: 0rem;
+    text-align: center; /* Pusatkan teks */
+    margin: 0px 0; /* Tambahkan jarak di atas dan bawah */
+    padding: 5px; /* Tambahkan ruang di dalam */
+    color: #5a5a5a; /* Warna teks yang lebih lembut */
+    font-size: 14px; /* Ukuran teks lebih kecil */
+    line-height: 1.5; /* Spasi antar baris */
+}
+
+.inspiration .text-description h2{
+    margin-bottom: 0rem;
+}
+
+
+/* Content Styling */
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Kartu lebih lebar */
+    gap: 4rem; /* Jarak antar kartu lebih besar */
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px; /* Border-radius lebih besar untuk estetika */
+    cursor: pointer;
+    height: 450px; /* Tinggi kartu lebih besar */
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Gambar tetap proporsional */
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: scale(1.1); /* Efek hover lebih besar */
+}
+
+.card:hover img {
+    transform: scale(1.0); /* Efek hover pada gambar lebih menonjol */
+}
+
+/* Overlay and Button */
+.overlay {
+    position: absolute;
+    bottom: 30px; /* Tombol lebih naik */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.overlay button {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 1rem 2rem; /* Tombol lebih besar */
+    border-radius: 25px;
+    font-size: 1.3rem; /* Ukuran font lebih besar */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.overlay button:hover {
+    background-color: #444;
+    transform: scale(1.1); /* Efek hover pada tombol */
+}
+
+/* inspiration ends */
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    --body-color: #faf7f6;
+    --text-color: hsl(0, 0%, 15%);
+    --container-color: rgba(255, 251, 251, 0.747);
+    --hover-color: hsla(38, 24%, 73%, 0.97);
+    --body-font: "Poppins", sans-serif;
+  }
+  
+  /*=============== BASE STYLES ===============*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--body-font);
+    background-color: var(--body-color);
+    overflow-x: hidden;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  
+
+/* ==========card========= */
+.container{
+    display: grid;
+    place-items: center;
+    margin: auto;
+
+}
+.card__container{
+    row-gap: 3.5rem;
+    display: grid;
+}
+
+.card__img {
+    width: 100%;
+    height: 100vh;
+    border-radius: 1.5rem;
+    position: center;
+    object-fit: cover;
+    place-items: center;
+    display: flex;
+}
+
+.card__img img{
+    display: flex;
+    margin-left: 2%;
+}
+
+
+.card__article {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+.card__data {
+    width: 280px;
+    background-color: var(--container-color);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+  }
+  
+  .card__description {
+    display: flex;
+    font-size: var(--small-font-size);
+    margin-bottom: .25rem;
+  }
+  
+  .card__title {
+    font-size: var(--h2-font-size);
+    font-weight: 500;
+    color: var(--title-color);
+    margin-bottom: .75rem;
+    align-items: center;
+  }
+  
+  .card__button {
+    text-decoration: none;
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    color: var(--first-color);
+  }
+  
+  .card__button:hover {
+    text-decoration: underline;
+  }
+  
+  /* Naming animations in hover */
+  .card__article:hover .card__data {
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+  }
+  
+  .card__article:hover {
+    animation: remove-overflow 2s forwards;
+  }
+  
+  .card__article:not(:hover) {
+    animation: show-overflow 2s forwards;
+  }
+  
+  .card__article:not(:hover) .card__data {
+    animation: remove-data 1s forwards;
+  }
+  
+  /* Card animation */
+  @keyframes show-data {
+    50% {
+      transform: translateY(-10rem);
+    }
+    100% {
+      transform: translateY(-7rem);
+    }
+  }
+  
+  @keyframes remove-overflow {
+    to {
+      overflow: initial;
+    }
+  }
+  
+  @keyframes remove-data {
+    0% {
+      transform: translateY(-7rem);
+    }
+    50% {
+      transform: translateY(-10rem);
+    }
+    100% {
+      transform: translateY(.5rem);
+    }
+  }
+  
+  @keyframes show-overflow {
+    0% {
+      overflow: initial;
+      pointer-events: none;
+    }
+    50% {
+      overflow: hidden;
+    }
+  }
+  
+  
+  
+  
+
+
+/* footer start */
+.footer {
+    margin: 2%;
+    border-radius: 5rem;
+    background: #eae0dc;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.2rem;
+    color: #5e473e;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box p {
+    font-size: 1.6rem;
+    color: #b58d7e;
+    padding: 1rem;
+}
+
+.footer .box-container .box a {
+    font-size: 1.4rem;
+    color: #5e473e;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer .box-container .box a:hover {
+    color: #9e7464;
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 2rem;
+}
+
+.footer .box-container .box a i {
+    padding-right: 0.5rem;
+    color: #5e473e;
+    font-size: 1.7rem;
+}
+
+.footer .box-container .box form input[type="email"] {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+    color: #5e473e;
+    text-transform: none;
+    margin: 0.7rem 0;
+    background: transparent;
+    border-radius: 0.75rem;
+    border: 0.1rem solid #caab9f;
+}
+
+.footer .box-container .box form input[type="email"]::placeholder {
+    color: #945f51;
+}
+
+.footer .box-container .box form input[type="submit"] {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.6rem;
+    color: white;
+    background-color: #9e7464;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.footer .box-container .box form input[type="submit"]:hover {
+    background-color: #5e473e;
+}
+
+
+.credit {
+    text-align: center;
+    font-size: 2rem;
+    color: #5e473e;
+    background: #f0e8e4;
+    margin: 2%;
+    border-radius: 3rem;
+}
+/* footer ends */
